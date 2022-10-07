@@ -13,7 +13,7 @@ interface SomeOtherFeatureCategory {
 export const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://some-api.com',
+    baseUrl: 'https://api.thedogapi.com/v1',
     prepareHeaders(headers) {
       headers.set('x-api-key', SOMEFEATURE_API_KEY);
 
@@ -24,7 +24,7 @@ export const apiSlice = createApi({
     return {
       fetchSomeOtherFeatureCategory: builder.query<SomeOtherFeatureCategory[], number | void>({
         query(limit = 10) {
-          return `/some-other-feature-category?limit=${limit}`;
+          return `/breeds?limit=${limit}`;
         },
       }),
     };
