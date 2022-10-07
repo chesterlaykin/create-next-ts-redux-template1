@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Create-next-ts-redux-template1
+- [Create-next-ts-redux-template1](#create-next-ts-redux-template1)
+    - [Redux](#redux)
+- [Current status](#current-status)
+- [Current goal](#current-goal)
+- [Comments (continuous)](#comments-continuous)
+      - [sep 2022](#sep-2022)
+- [Installed dependencies + configurations](#installed-dependencies--configurations)
+  - [**Create next-app with typescript**](#create-next-app-with-typescript)
+  - [**Redux ("modern redux" with toolkit)**](#redux-modern-redux-with-toolkit)
+    - [Compileroptions configurations](#compileroptions-configurations)
+  - [**Typescript**](#typescript)
+    - [Vscode recommended settings](#vscode-recommended-settings)
+  - [Bootstrap 5](#bootstrap-5)
+  - [**SASS**](#sass)
+    - [**Sass**](#sass-1)
 
-## Getting Started
+# Create-next-ts-redux-template1
 
-First, run the development server:
+Template with Next (by Create next app), and typescript, and redux (modern redux with toolkit)
+### Redux
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Modern redux with redux toolkit (that uses Immer)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Current status
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Current goal
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Configure w redux
+# Comments (continuous)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+#### sep 2022
 
-To learn more about Next.js, take a look at the following resources:
+maybe add @types/express
+# Installed dependencies + configurations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **Create next-app with typescript**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Command used:
+`yarn create next-app --typescript`
 
-## Deploy on Vercel
+Next version: 12.3.1
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **Redux ("modern redux" with toolkit)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- @reduxjs/toolkit
+- react-redux
+- react-dom
+- express
+
+Command:
+
+`yarn add @reduxjs/toolkit react-redux react-dom express`
+### Compileroptions configurations
+
+To not have to import React in every component:
+
+`"jsx": "react-jsx"`
+
+## **Typescript**
+
+The `--typescript` option installs:
+
+- @types/node": "18.8.3"
+- @types/react": "18.0.21",
+- @types/react-dom
+
+### Vscode recommended settings
+
+## Bootstrap 5
+
+Css grid enabled  ( bootstrap5.2\_variables.scss )
+## **SASS**
+
+### **Sass**
+
+Sass
