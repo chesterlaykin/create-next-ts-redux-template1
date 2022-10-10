@@ -2,12 +2,14 @@ import type { NextPage } from 'next'
 // import Head from 'next/head'
 import React, { useState } from 'react'
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { RootState } from '../redux/store';
+
 import { incremented, amountAdded } from '../redux/features/somefeature/somefeature-slice';
 import { useFetchSomeOtherFeatureCategoryQuery } from '../redux/features/someotherfeature/someotherfeature-api-slice'
 
 const Home:NextPage = () => {
 
-  const count = useAppSelector((state:any) => state.somefeature.value);
+  const count = useAppSelector((state:RootState) => state.somefeature.value);
   const dispatch = useAppDispatch();
 
   const [numItems, setNumItems] = useState(10);

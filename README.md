@@ -17,18 +17,18 @@ Create-next-ts-redux-template1
 
 # Create-next-ts-redux-template1
 
-Template with Next (by Create next app), and typescript, and redux (modern redux with toolkit)
+Template with Next (by Create next app), and typescript, and redux (modern redux with toolkit).
+Based on example : [https://github.com/learnwithjason/lets-learn-redux-toolkit](github.com/learnwithjason/lets-learn-redux-toolkit)
+[youtube tutorial](https://www.youtube.com/watch?v=9zySeP5vH9c)
 ### Redux
 
 Modern redux with redux toolkit (that uses Immer)
 
 # Current status
-
+Working
 # Current goal
 
-Configure w redux
 # Comments (continuous)
-
 
 #### sep 2022
 
@@ -40,7 +40,7 @@ maybe add @types/express
 Command used:
 `yarn create next-app --typescript`
 
-Next version: 12.3.1
+Next.js version: 12.3.1
 
 ## **Redux ("modern redux" with toolkit)**
 
