@@ -6,10 +6,6 @@ import somefeatureReducer from './features/somefeature/somefeature-slice';
 //Import all api slices
 import { apiSlice } from './features/someotherfeature/someotherfeature-api-slice';
 
-// function getStore(PRELOADED_STATE) {
-//   const store = createStore(counterReducer, PRELOADED_STATE)
-//   return store
-// }
 export const store = configureStore({
   reducer: {
     //add slices and api slices
